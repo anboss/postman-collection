@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "47b6435c-9629-47b9-bc12-376368420b15",
+		"name": "slack",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7032494"
+	},
+	"item": [
+		{
+			"name": "post-to-slack",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"text\": \"This is a test message.\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hooks.slack.com/services/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",
+					"protocol": "https",
+					"host": [
+						"hooks",
+						"slack",
+						"com"
+					],
+					"path": [
+						"services",
+						"TC3SQSEK0",
+						"B03RAUJEXCM",
+						"SdwhzV1ow1FkYIuUguNC9A7o"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post-to-slack Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"text\": \"This is a test message.\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/posttoslack",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"posttoslack"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
